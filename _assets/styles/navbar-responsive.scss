@@ -1,3 +1,6 @@
+$color-gray:#34495e ;
+$color-white: #ffffff ;
+
 * {
   box-sizing: border-box;
 }
@@ -17,20 +20,20 @@ header {
     text-align: center;
     padding: 1em;
     text-decoration: none;
-    color: white;
+    color: $color-white;
     &:hover {
-      background: #34495e;
+      background: $color-gray;
     }
   }
   .brand {
     width: 10em;
     text-align: center;
     padding: 1em;
-    color: white;
+    color: $color-white;
   }
   .toggle {
     padding: 1em;
-    color: white;
+    color: $color-white;
   }
 }
 
@@ -72,7 +75,7 @@ header {
   }
 .navbar.active {
   .toggle {
-    color: white;
+    color: $color-white;
   }
   div {
     display: block;
