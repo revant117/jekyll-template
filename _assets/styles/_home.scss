@@ -16,16 +16,11 @@ html, body {
   align-items : center;
 }
 
-container-noimg {
+.container-noimg {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items : center;
-}
-
-.navbar-main {
-  width: 80%;
-  height : 100px;
 }
 
 .heading-section , .button-section{
