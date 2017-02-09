@@ -1,3 +1,11 @@
+html, body {
+   margin: 0px;
+   padding: 0px;
+   border: 0px;
+   display : flex;
+   justify-content: center;
+ }
+
 h1 {
   font-family: Roboto;
   text-align: center;
@@ -24,4 +32,13 @@ h1 {
 
 .middle {
   text-align: center;
+}
+
+.container {
+  width: 80vw ;
+  border: 5px solid black;
+}
+
+.navbar-main {
+  border : 2px solid red;
 }
