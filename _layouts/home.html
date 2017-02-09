@@ -4,26 +4,21 @@
 ---
 <!DOCTYPE html>
 <html lang="en-gb">
-  <head>
-    <title>
-      Sample site
-    </title>
-    {% css main %}
-  </head>
+  {% include head.html title=page.title %}
   <body>
     <section class="container-main">
       <nav class="navbar-main">
-        nav-b
+        Navbar place holder text
       </nav>
       <div class="heading-section">
-       <h1> Main Heading</h1>
-       <h3>Sub Heading</h3>
+       <h1>{{ page.heading }} </h1>
+       <h3>{{ page.sub_heading }}</h3>
       </div>
       <div class="button-section">
        <button type="button" class="btn btn-default">
-          <a href="#"> Start 30 day trial</a>
+          <a href="#"> {{ page.button_one_text}}</a>
        </button>
-       <h3>Sub Heading</h3>
+       <h3>{{ page.sub_heading }}</h3>
       </div>
       <div class="img-container">
        <img src="/img/container_below.png" class="img-main">
@@ -32,14 +27,14 @@
     <section class="container-noimg">
       <div class="heading-section-large">
        <img src="/img/logo_02.png">
-       <h1> Main Heading</h1>
-       <h3>Sub Heading</h3>
+       <h1> {{ page.heading }}</h1>
+       <h3>{{ page.sub_heading }}</h3>
       </div>  
     </section>
     <section class="info-image">
       <div class="information">
-        <h2> Something </h2>
-        <p> Some info</p>
+        <h2> {{ page.info_heading }} </h2>
+        <p> {{ page.info_sub_heading }}</p>
       </div>
       <div class="image">
          <img src="/img/mock_two.png" height="200" width="600">
@@ -50,8 +45,8 @@
          <img src="/img/mock_two.png" height="200" width="600">
       </div>
       <div class="information">
-        <h2> Something </h2>
-        <p> Some info</p>
+        <h2>{{ page.info_heading }}</h2>
+        <p> {{ page.info_sub_heading }}</p>
       </div>
     </section>
     <section class="details">
