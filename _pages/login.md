@@ -1,5 +1,5 @@
 ---
 layout: login
-permalink: /login
+permalink: /login/
 title : Login with us 
 ---

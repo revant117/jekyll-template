@@ -1,6 +1,6 @@
 ---
 layout: signup
-permalink: /signup
+permalink: /signup/
 title : Signup 
 ---
 

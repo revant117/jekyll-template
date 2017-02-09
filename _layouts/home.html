@@ -7,8 +7,14 @@
   {% include head.html title=page.title %}
   <body>
     <section class="container-main">
-      <nav class="navbar-main">
-        Navbar place holder text
+      <nav class="navbar">
+        <a href="#" class="brand">Brand</a>
+        <a href="#" class="toggle"><i class="fa fa-reorder"></i></a>
+        <div class="right">
+          <a href="/blog/" class="link">{{ page.nav-one}}</a>
+          <a href="/login/" class="link">{{ page.nav-two}}</a>
+          <a href="/signup/" class="link">{{ page.nav-three}}</a>
+        </div>
       </nav>
       <div class="heading-section">
        <h1>{{ page.heading }} </h1>
