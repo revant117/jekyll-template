@@ -7,18 +7,7 @@
   {% include head.html title=page.title %}
   <body>
     <section class="container-main">
-      <nav class="navbar">
-        <div class="logo">
-          <img src="/img/logo_02.png" height="40" width="42">
-          <a href="#">{{page.brand}}</a>
-        </div>
-        <a href="#" class="toggle"><i class="fa fa-reorder fa-2x"></i></a>
-        <div class="right">
-          <a href="/blog/" class="link">{{ page.nav-one}}</a>
-          <a href="/login/" class="link">{{ page.nav-two}}</a>
-          <a href="/signup/" class="link">{{ page.nav-three}}</a>
-        </div>
-      </nav>
+      {% include header.html %}
       <div class="heading-section">
        <h1>{{ page.heading }} </h1>
        <h3>{{ page.sub_heading }}</h3>
@@ -73,7 +62,7 @@
     </section>
     <section class="contact-form">
       
-    </section>
+    </section>-
 
     {% include footer.html title=page.title %}
 
