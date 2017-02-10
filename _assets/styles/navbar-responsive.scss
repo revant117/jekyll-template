@@ -1,5 +1,5 @@
-$color-gray:#34495e ;
-$color-white: #ffffff ;
+$color-gray: #212a37;
+$color-white: #ffffff;
 
 * {
   box-sizing: border-box;
@@ -21,10 +21,17 @@ header {
     padding: 1em;
     text-decoration: none;
     color: $color-white;
-    &:hover {
-      background: $color-gray;
-    }
   }
+  .with-border{
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      margin: .8em;
+      padding: .3em;
+      color: $color-white;
+      border: .5px solid white;
+      border-radius: 25px;
+    }
   .logo {
     width: 10em;
     text-align: center;
@@ -39,12 +46,17 @@ header {
     padding: 1em;
     color: $color-white;
   }
+  .right {
+    a {
+      font-family: Roboto;
+    }
+  }
 }
 
 @media (min-width: 600px) {
     .navbar {
       display: flex;
-      flex-direction : row;
+      flex-direction: row;
       justify-content: space-between;
       .left,.right {
         display: flex;
@@ -73,8 +85,9 @@ header {
 
 @media (max-width: 600px) {
 .navbar {
+    width: 100%;
     display: flex;
-    flex-direction : row;
+    flex-direction: row;
     justify-content: space-between;
 
     .logo{
@@ -84,11 +97,34 @@ header {
     }
   }
 .navbar.active {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background: $color-gray;
   .toggle {
+    width: 90%;
     color: $color-white;
   }
-  div {
-    display: block;
+  .right {
+    margin-left: 60px;
+    margin-top: 60px;
+    height: 80vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size:22px;
+    .link {
+        padding: 5px;
+        margin: 10px;
+        text-align: left;
+      }
+    .with-border {
+        padding: 5px;
+        text-align: center;
+        margin-left: 0;
+      }
     }
   }
 }
