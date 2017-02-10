@@ -6,7 +6,8 @@ html, body {
    display: flex;
    justify-content: center;
    flex-direction: column;
-   width: 100%;
+   max-width: 100vw;
+   overflow-x: hidden;
  }
 
 .container-main {
@@ -89,3 +90,20 @@ html, body {
   height: 300px;
   background-color: #9b59b6;
 }
+
+.form-container {
+  width: 100%;
+  background-color: #f4f7f8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .main-form{
+    margin: 100px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+

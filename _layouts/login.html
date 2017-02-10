@@ -6,13 +6,16 @@
 <html lang="en-gb">
   {% include head.html title=page.title %}
   <body>
-  	<section class="container-main">
-  		{% include header.html %}
-	    <section class="container-noimg">
-	      <div class="layout">
-	      <div>
-	    </section>
-	    {% include footer.html %}
-  	</section>
+  	<section class="form-container">
+      <div class="main-form">
+        <h4>Email</h4>
+        <input type="email" name="email">
+        <h4>Password</h4>
+        <input type="password" name="password">
+        <a href="/">Login</a>
+        <a href="#">Login with google</a>
+        <a href="/signup/">Signup</a>
+      </div>
+    </section>
   </body>
-</html>
+</html> 

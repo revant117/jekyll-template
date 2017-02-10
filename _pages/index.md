@@ -1,7 +1,8 @@
 ---
 layout: home
 permalink: /
-title : Asignment
+title : MOM , Making Notes Easy to drive change .
+brand: MoM
 heading: dummy heading
 sub_heading : Sub Heading
 button_one_text : Start 30 day 
