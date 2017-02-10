@@ -1,0 +1,125 @@
+
+$color-white: #ffffff;
+$color-footer: #212a37;
+$color-footer-bottom: #1d2531;
+$font-footer-elements: #8e9aac;
+$font-footer-bottom: #3e4959;
+$color-footer-social-media:  #2c3748;
+
+footer {
+  width: 100%;
+  background-color: $color-footer;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+
+  .footer-social-media{
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $color-footer-social-media;
+    .icon-container{
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+	.footer-logo {
+		width: 45%;
+		margin-bottom: 20px;
+
+    a {
+      margin: 10px;
+      font-size: 12px;
+      color: $color-white;
+    }
+  }
+
+	.footer-columns {
+		width: 50%;
+		display: flex;
+		flex-flow: row wrap;
+
+    .column{
+      margin-right: 25px;
+      margin-left: 25px;
+      text-align: center; 
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        a {
+          font-family: ProximaNova;
+          font-size: 14px;
+          color: $font-footer-elements;
+        }
+      }
+
+      h4 {
+        font-family: ProximaNova;
+        font-size: 12px;
+        color: $color-white;
+      }
+    }
+	}
+
+  .footer-bottom {
+    padding: 20px;
+    font-family: ProximaNova;
+    font-size: 14px;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    background-color: $color-footer-bottom;
+    color: $font-footer-bottom;
+  }
+
+}
+
+@media (max-width: 600px) {
+  footer {
+    .footer-social-media{
+      .icon-container{
+        width: 90%;
+      }
+    }
+    .footer-columns {
+      margin: 0;
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+
+      .column {
+        flex: 0 0 30%;
+        text-align: center; 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        ul {
+          font-size: 16px;
+          list-style: none;
+          padding: 0;
+        }
+
+        h4 {
+          font-size: 18px;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
+
+
+
+

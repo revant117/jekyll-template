@@ -11,7 +11,7 @@ header {
 
 .navbar {
   width: 80%;
-  .toggle, .brand {
+  .toggle, .logo {
     display: inline-block;
   }
   .link {
@@ -25,11 +25,15 @@ header {
       background: $color-gray;
     }
   }
-  .brand {
+  .logo {
     width: 10em;
     text-align: center;
     padding: 1em;
-    color: $color-white;
+    a {
+      margin: 10px;
+      font-size: 24px;
+      color: $color-white;
+    }
   }
   .toggle {
     padding: 1em;
@@ -72,6 +76,12 @@ header {
     display: flex;
     flex-direction : row;
     justify-content: space-between;
+
+    .logo{
+      a{
+      font-size: 22px;
+      }
+    }
   }
 .navbar.active {
   .toggle {

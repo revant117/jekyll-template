@@ -8,8 +8,11 @@
   <body>
     <section class="container-main">
       <nav class="navbar">
-        <a href="#" class="brand">Brand</a>
-        <a href="#" class="toggle"><i class="fa fa-reorder"></i></a>
+        <div class="logo">
+          <img src="/img/logo_02.png" height="40" width="42">
+          <a href="#">{{page.brand}}</a>
+        </div>
+        <a href="#" class="toggle"><i class="fa fa-reorder fa-2x"></i></a>
         <div class="right">
           <a href="/blog/" class="link">{{ page.nav-one}}</a>
           <a href="/login/" class="link">{{ page.nav-two}}</a>
@@ -71,12 +74,8 @@
     <section class="contact-form">
       
     </section>
-    <section class="social-media">
-      
-    </section>
-    <footer>
-      
-    </footer>
+
+    {% include footer.html title=page.title %}
 
   </body>
 </html>
