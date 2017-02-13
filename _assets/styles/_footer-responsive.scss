@@ -12,7 +12,7 @@ footer {
         justify-content: center;
         background-color: $color-footer-social-media;
         .icon-container {
-            width: 40%;
+            width: 35%;
             display: flex;
             justify-content: space-between;
         }
@@ -27,7 +27,7 @@ footer {
             margin-left: 30px;
             a {
                 margin: 10px;
-                font-size: 12px;
+                font-size: 16px;
                 color: $color-white;
             }
         }
@@ -49,14 +49,14 @@ footer {
                     text-align: left;
                     a {
                         font-family: ProximaNova;
-                        font-size: 14px;
+                        font-size: 16px;
                         color: $font-footer-elements;
                     }
                 }
                 h4 {
                     text-align: left;
                     font-family: ProximaNova;
-                    font-size: 12px;
+                    font-size: 16px;
                     color: $color-white;
                 }
             }

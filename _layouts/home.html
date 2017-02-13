@@ -1,154 +1,195 @@
 --- 
+# 3 dashes above and below are needed 
+# so that jekyll can process the files 
 ---
 <!DOCTYPE html>
 <html lang="en-gb">
-{% include head.html title=page.title %}
-
-<body>
+  {% include head.html title=page.title %}
+  <body>
     <section class="container-main">
-        {% include header.html %}
+      {% include header.html %}
 
-        <div class="heading-section">
-            <h1>{{ page.heading }} </h1>
-            <h3>{{ page.sub_heading }}</h3>
-            <div class="button-section">
-                <button type="button" class="button">
+      <div class="heading-section">
+        <h1>{{ page.heading }} </h1>
+        <h3>{{ page.sub_heading }}</h3>
+        <div class="button-section">
+         <button type="button" class="button">
             {{ page.button_one_text}}
          </button>
-                <p>{{ page.sub_heading }}</p>
-            </div>
-            <div class="img-container">
-                <img src="/img/container_below.png" class="img-main" alt="MoM screenshot">
-            </div>
+         <p>{{ page.sub_heading }}</p>
         </div>
+        <div class="img-container">
+         <img src="/img/container_below.png" class="img-main" alt="MoM screenshot">
+        </div>
+      </div>
     </section>
     <section class="container-noimg">
-        <div class="heading-section-large">
-            <img src="/img/logo_02.png" alt="MoM Logo">
-            <h2>MoM</h2>
-            <p>Effective meetings are hard work. Apart from agenda at hand , someone needs to be thinking about the process and following up</p>
-        </div>
+      <div class="heading-section-large">
+       <img src="/img/logo_02.png" alt="MoM Logo">
+       <h2>MoM</h2>
+       <p>Effective meetings are hard work. Apart from agenda at hand , someone needs to be thinking about the process and following up</p>
+      </div>  
     </section>
 
     <section class="info-image">
-        <div class="info-row info-row-reverse">
-            <div class="information">
-                <h2> Collaborative Notes</h2>
-                <p>There isn't any UI. Type notes as you normally would and actions items are created.</p>
-                <button type="button" class="button">
+      <div class="info-row info-row-reverse">
+        <div class="information">
+          <h2> Collaborative Notes</h2>
+          <p>There isn't any UI. Type notes as you normally would and actions items are created.</p>
+          <button type="button" class="button">
             GET STARTED
           </button>
-            </div>
-            <div class="image">
-                <img src="/img/mock_two.png" alt="MoM info image one">
-            </div>
         </div>
-        <div class="info-row">
-            <div class="image">
-                <img src="/img/mock_three.png" alt="MoM info image two">
-            </div>
-            <div class="information">
-                <h2>Simple. Just Start Typing.</h2>
-                <p>No complicated forms, drop downs. As simple as taking notes on paper. Just Start typing.</p>
-                <button type="button" class="button">
+        <div class="image">
+           <img src="/img/mock_two.png" alt="MoM info image one">
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="image">
+         <img src="/img/mock_three.png" alt="MoM info image two">
+        </div>
+        <div class="information">
+          <h2>Simple. Just Start Typing.</h2>
+          <p>No complicated forms, drop downs. As simple as taking notes on paper. Just Start typing.</p>
+          <button type="button" class="button">
             GET STARTED
           </button>
-            </div>
         </div>
+      </div>
     </section>
     <section class="details">
-        <div class="details-card-container">
-            <div class="details-card">
-                <div class="image-heading">
-                    <div class="image">
-                        <img src="/img/vector-smart-object-1.png" alt="MoM info image one">
-                    </div>
-                    <h2>Templates</h2>
-                </div>
-                <div class="detail-information">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque lectus felis, vulputate hendrerit augue fermentum dictum. Proin sed rutrum nisl. Aliquam vel libero velit.
-                    </p>
-                </div>
-            </div>
-            <div class="details-card">
-                <div class="image-heading">
-                    <div class="image">
-                        <img src="/img/vector-smart-object-3.png" alt="MoM info image one">
-                    </div>
-                    <h2>Widgets</h2>
-                </div>
-                <div class="detail-information">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque lectus felis, vulputate hendrerit augue fermentum dictum. Proin sed rutrum nisl. Aliquam vel libero velit.
-                    </p>
-                </div>
-            </div>
-            <div class="details-card">
-                <div class="image-heading">
-                    <div class="image">
-                        <img src="/img/vector-smart-object.png" alt="MoM info image one">
-                    </div>
-                    <h2>Actions</h2>
-                </div>
-                <div class="detail-information">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque lectus felis, vulputate hendrerit augue fermentum dictum. Proin sed rutrum nisl. Aliquam vel libero velit.
-                    </p>
-                </div>
-            </div>
+      <div class="details-card-container">
+        <div class="details-card">
+        <div class="image-heading">
+          <div class="image">
+             <img src="/img/vector-smart-object-1.png" alt="MoM info image one">
+          </div>
+          <h2>Templates</h2>
         </div>
+        <div class="detail-information">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque lectus felis, vulputate hendrerit augue fermentum dictum. Proin sed rutrum nisl. Aliquam vel libero velit.
+          </p>
+        </div>
+      </div>
+      <div class="details-card">
+        <div class="image-heading">
+          <div class="image">
+             <img src="/img/vector-smart-object-3.png" alt="MoM info image one">
+          </div>
+          <h2>Widgets</h2>
+        </div>
+        <div class="detail-information">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque lectus felis, vulputate hendrerit augue fermentum dictum. Proin sed rutrum nisl. Aliquam vel libero velit.
+          </p>
+        </div>
+      </div>
+      <div class="details-card">
+        <div class="image-heading">
+          <div class="image">
+             <img src="/img/vector-smart-object.png" alt="MoM info image one">
+          </div>
+          <h2>Actions</h2>
+        </div>
+        <div class="detail-information">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque lectus felis, vulputate hendrerit augue fermentum dictum. Proin sed rutrum nisl. Aliquam vel libero velit.
+          </p>
+        </div>
+      </div>
+      </div>
     </section>
     <section class="insights">
-        <div class="insights-container">
-            <div class="insight">
-                <h2>2000 +</h2>
-                <h3>Meeting Minutes</h2>
-            </div>
-            <div class="insight">
-                <h2>100 +</h2>
-                <h3>Decisions Made</h2>
-            </div>
-            <div class="insight">
-                <h2>80 +</h2>
-                <h3>Active Teams</h2>
-            </div>
-            <div class="insight">
-                <h2>800 +</h2>
-                <h3>Action Items</h2>
-            </div>
+      <div class="insights-container">
+        <div class="insight">
+          <h2>2000 +</h2>
+          <h3>Meeting Minutes</h2>
         </div>
+        <div class="insight">
+          <h2>100 +</h2>
+          <h3>Decisions Made</h2>
+        </div>
+        <div class="insight">
+          <h2>80 +</h2>
+          <h3>Active Teams</h2>
+        </div>
+        <div class="insight">
+          <h2>800 +</h2>
+          <h3>Action Items</h2>
+        </div>
+      </div>
     </section>
     <section class="testimonials">
-        <div class="testimonials-container">
-            <div class="user-words">
-                <h2>Our Users Say</h2>
-                <div class="user-image">
-                    <div class="image">
-                        <img src="/img/dp.png">
-                    </div>
-                    <h3>Himanshu</h3>
-                    <div class="user-cred image">
-                        <img src="/img/hashedin.png">
-                    </div>
-                </div>
-                <p>MoM has an absolutely amazing and simple to use UI that has saved me countless hours working with my team and clients. I have falling in love with Rating & Polls which helps me collect feedback instantly and without bias. <span>Must Use!</span></p>
+      <div class="testimonials-container">
+        <div class="user-words">
+          <h2>Our Users Say</h2> 
+          <div class="user-image">
+            <div class="image">
+              <img src="/img/dp.png">
             </div>
-            <div class="testimonial-bottom">
-                <p>Dont take Himanshu's word? Take a free trial and find yourself.</p>
-                <button type="button" class="button"> Take 30 day Free Trial</button>
-                <p>Excellent for recurring corporate meeting minutes.</p>
+            <h3>Himanshu</h3>
+            <div class="user-cred image">
+              <img src="/img/hashedin.png">
             </div>
+          </div>
+          <p>MoM has an absolutely amazing and simple to use UI that has saved me countless hours working with my team and clients. I have falling in love with Rating & Polls which helps me collect feedback instantly and without bias. <span>Must Use!</span></p>
         </div>
+        <div class="testimonial-bottom">
+          <p>Dont take Himanshu's word? Take a free trial and find yourself.</p>
+          <button type="button" class="button"> Take 30 day Free Trial</button>
+          <p>Excellent for recurring corporate meeting minutes.</p>
+        </div>
+      </div>
     </section>
     <section class="pricing" id="pricing">
-
+      <div class="border-top">
+      </div>
+      <div class="pricing-container">
+        <h2>Pricing and Plans</h2>
+        <div class="pricing-terms">
+          <h3>No credit card for trial</h3>
+          <h3>Cancel Anytime</h3>
+        </div>
+        <div class="pricing-card-container">
+          <div class="pricing-card-indivisual pricing-card">
+            <div class="card-head">
+              <h3>Indivisual</h3>
+              <p>Billed Monthly</p>
+            </div>
+            <div class="card-body">
+              
+            </div>
+            <div class="card-footer">
+              <button  type="button" class="button">
+                Get started - 8$
+              </button>
+            </div>
+            <div class="card-border"></div>
+          </div>
+          <div class="pricing-card-enterprise pricing-card">
+            <div class="card-head">
+              <h3>Team and Enterprise</h3>
+              <p>Roll out MoM for your team & Enterprise</p>
+            </div>
+            <div class="card-body">
+              
+            </div>
+            <div class="card-footer">
+              <button  type="button" class="button">
+                Contact us
+              </button>
+            </div>
+            <div class="card-border"></div>
+          </div> 
+        </div>
+      </div>
     </section>
     <section class="contact-form">
-
+      
     </section>
 
     {% include footer.html %}
 
-</body>
+  </body>
 </html>
