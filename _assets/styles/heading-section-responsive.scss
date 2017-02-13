@@ -1,48 +1,48 @@
 .heading-section {
-	width: 80%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-top: 50px;
-	margin-bottom: 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 0;
 
-	h1 {
-		color: $color-white;
-		font-family: Roboto;
-	}
+  h1 {
+    color: $color-white;
+    font-family: Roboto;
+  }
 
-	h3 {
-		font-size: 18px;
-		color: $color-white;
-		font-family: Roboto;
-	}
+  h3 {
+    font-size: 18px;
+    color: $color-white;
+    font-family: Roboto;
+  }
 
-	p {
-		color: $color-white;
-		font-family: Roboto;
-	}
+  p {
+    color: $color-white;
+    font-family: Roboto;
+  }
 
-	.button-section{
-		width: 100%;
-		margin-top: 50px;
-		align-self: center;
-	}
-
-	.img-container {
-		margin-top: 50px;
-		align-self: center;
-		width: 80%;
-	}
+  .button-section{
+    width: 100%;
+    margin-top: 50px;
+    align-self: center;
+  }
+  
+  .img-container {
+    margin-top: 50px;
+    align-self: center;
+    width: 80%;
+  }
 }
 
 .button {
-	color: $color-white;
-	font-family: Roboto;
-	font-size: 14px;
-	padding: 8px 16px 8px 16px;
-	border: .5px solid #1ea2ff;
-	border-radius: 25px;
-	background-color: $color-button;
-	margin-bottom: 20px;
+  color: $color-white;
+  font-family: Roboto;
+  font-size: 14px;
+  padding: 8px 16px 8px 16px;
+  border: .5px solid #1ea2ff;
+  border-radius: 25px;
+  background-color: $color-button;
+  margin-bottom: 20px;
 }
 
