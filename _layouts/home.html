@@ -8,43 +8,53 @@
   <body>
     <section class="container-main">
       {% include header.html %}
+
       <div class="heading-section">
-       <h1>{{ page.heading }} </h1>
-       <h3>{{ page.sub_heading }}</h3>
-      </div>
-      <div class="button-section">
-       <button type="button" class="btn btn-default">
-          <a href="#"> {{ page.button_one_text}}</a>
-       </button>
-       <h3>{{ page.sub_heading }}</h3>
-      </div>
-      <div class="img-container">
-       <img src="/img/container_below.png" class="img-main" alt="MoM screenshot">
+        <h1>{{ page.heading }} </h1>
+        <h3>{{ page.sub_heading }}</h3>
+        <div class="button-section">
+         <button type="button" class="button">
+            {{ page.button_one_text}}
+         </button>
+         <p>{{ page.sub_heading }}</p>
+        </div>
+        <div class="img-container">
+         <img src="/img/container_below.png" class="img-main" alt="MoM screenshot">
+        </div>
       </div>
     </section>
     <section class="container-noimg">
       <div class="heading-section-large">
        <img src="/img/logo_02.png" alt="MoM Logo">
-       <h1> {{ page.heading }}</h1>
-       <h3>{{ page.sub_heading }}</h3>
+       <h2>MoM</h2>
+       <p>Effective meetings are hard work. Apart from agenda at hand , someone needs to be thinking about the process and following up</p>
       </div>  
     </section>
+
     <section class="info-image">
-      <div class="information">
-        <h2> {{ page.info_heading }} </h2>
-        <p> {{ page.info_sub_heading }}</p>
+      <div class="info-row info-row-reverse">
+        <div class="information">
+          <h2> Collaborative Notes</h2>
+          <p>There isn't any UI. Type notes as you normally would and actions items are created.</p>
+          <button type="button" class="button">
+            GET STARTED
+          </button>
+        </div>
+        <div class="image">
+           <img src="/img/mock_two.png" alt="MoM info image one">
+        </div>
       </div>
-      <div class="image">
-         <img src="/img/mock_two.png" height="200" width="600" alt="MoM info image one">
-      </div>
-    </section>
-    <section class="info-image">
-      <div class="image">
-         <img src="/img/mock_two.png" height="200" width="600" alt="MoM info image two">
-      </div>
-      <div class="information">
-        <h2>{{ page.info_heading }}</h2>
-        <p> {{ page.info_sub_heading }}</p>
+      <div class="info-row">
+        <div class="image">
+         <img src="/img/mock_three.png" alt="MoM info image two">
+        </div>
+        <div class="information">
+          <h2>Simple. Just Start Typing.</h2>
+          <p>No complicated forms, drop downs. As simple as taking notes on paper. Just Start typing.</p>
+          <button type="button" class="button">
+            GET STARTED
+          </button>
+        </div>
       </div>
     </section>
     <section class="details">
